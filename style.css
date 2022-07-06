@@ -8,6 +8,10 @@ p{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .menu a{
     text-decoration: none;
     color: #0A2540;
@@ -131,9 +135,11 @@ h1::before{
 }
 
 .item3{
-    background-color: #D9D9D9;
-    padding: 20px;
     margin-top: 10px;
+}
+
+.item3 h3{
+    color: white;
 }
 
 h2{
@@ -195,13 +201,40 @@ h3{
 }
 
 .projeto{
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+}
 
+.projeto-1{
+    background: url(./img/bikcraft.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projeto-2{
+    background: url(./img/care-cat.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.projeto-2>h3{
+    color: #7A73FF;
+}
+
+.projeto-3{
+    background: url(./img/plantae.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .tags{
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end
 }
 
 .tags span{
@@ -211,7 +244,7 @@ h3{
     color: white;
     display: block;
     border-radius: 20px;
-    margin-right: 10px;
+    margin: 5px;
 }
 
 .bg-azul{
@@ -508,6 +541,10 @@ h3{
         grid-template-columns: 1fr;
         padding-top: 40px;
         padding-bottom: 40px;
+        gap: 20px;
+    }
+
+    .projetos:first-child{
         gap: 0;
     }
 
@@ -519,6 +556,10 @@ h3{
         grid-row: 5 / span 1;
         margin-top: 20px;
         justify-self: center
+    }
+
+    .item3{
+        margin-top: 20px;
     }
 
     .skills{
@@ -551,6 +592,7 @@ h3{
 
     .rodape p{
         font-size: 1rem;
+        text-align: center;
     }
 
     .rodape a{
