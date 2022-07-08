@@ -464,6 +464,10 @@ h3{
         max-width: 750px;
     }
 
+    .complementares h3{
+        font-size: 1.8rem;
+    }
+
     .skills-item{
         gap: 60px;
     }
@@ -513,6 +517,10 @@ h3{
         background-size: 40px 100px;
         left: -30px;
         top: -30px;
+    }
+
+    .complementares h3{
+        font-size: 1.6rem;
     }
 
     .introducao{
@@ -656,6 +664,7 @@ h3{
 
     .descricao{
         margin-top: 5px;
+        font-size: 1rem;
     }
 
     .profile-pic{
