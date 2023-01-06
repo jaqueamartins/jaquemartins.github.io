@@ -77,6 +77,11 @@ li {
 
 .menu {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  bottom: 150px;
 }
 
 .bg-intro{
@@ -214,7 +219,7 @@ h2 {
   font-family: "Roboto Mono", monospace;
   color: #0a2540;
   position: relative;
-  z-index: 9999;
+  z-index: 2;
 }
 
 h2::before {
@@ -331,6 +336,7 @@ h3 {
   color: white;
   display: block;
   border-radius: 20px;
+  text-align: center;
 }
 
 .bg-azul {
@@ -475,6 +481,11 @@ h3 {
 }
 
 @media (max-width: 1300px) {
+  .bg-intro {
+    box-shadow: inset 300px 0px #7a73ff;
+    box-sizing: border-box;
+  }
+
   header {
     max-width: 900px;
   }
@@ -482,6 +493,10 @@ h3 {
   .introducao {
     max-width: 900px;
     gap: 50px;
+  }
+
+  .servicos{
+    max-width: 900px;
   }
 
   .projetos {
@@ -510,6 +525,10 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  .bg-intro {
+    box-shadow: inset 250px 0px #7a73ff;
+  }
+
   header {
     max-width: 750px;
   }
@@ -517,6 +536,18 @@ h3 {
   .introducao {
     max-width: 750px;
     gap: 50px;
+  }
+
+  .servicos{
+    max-width: 750px;
+  }
+
+  .servico-tipo{
+    padding: 20px;
+  }
+
+  .servico-tipo img {
+    width: 20%;
   }
 
   .projetos {
@@ -563,6 +594,17 @@ h3 {
 }
 
 @media (max-width: 800px) {
+  .bg-intro {
+    box-shadow: inset 200px 0px #7a73ff;
+    box-sizing: border-box;
+  }
+
+  h1::before {
+    background-size: 40px 100px;
+    margin-left: 25px;
+    top: -30px;
+  }
+
   header {
     flex-direction: column;
   }
@@ -592,6 +634,10 @@ h3 {
   .introducao {
     max-width: 650px;
     gap: 30px;
+  }
+
+  .servicos{
+    max-width: 650px;
   }
 
   .projetos {
@@ -625,6 +671,11 @@ h3 {
 }
 
 @media (max-width: 690px) {
+  .bg-intro {
+    box-shadow: inset 150px 0px #7a73ff;
+    box-sizing: border-box;
+  }
+
   .introducao {
     max-width: 500px;
   }
@@ -637,6 +688,15 @@ h3 {
     background-size: 40px 100px;
     margin-left: 25px;
     top: -30px;
+  }
+
+  .servicos{
+    max-width: 500px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-servicos{
+    grid-column: span 2;
   }
 
   .projetos {
@@ -683,7 +743,16 @@ h3 {
 }
 
 @media (max-width: 570px) {
+  .bg-intro {
+    box-shadow: inset 100px 0px #7a73ff;
+    box-sizing: border-box;
+}
+  
   .introducao {
+    max-width: 450px;
+  }
+
+  .servicos{
     max-width: 450px;
   }
 
@@ -720,12 +789,30 @@ h3 {
 }
 
 @media (max-width: 440px) {
+
+  .bg-intro {
+    box-shadow: none;
+  }
+
+  ul{
+    gap: 30px;
+  }
+
   .introducao {
     max-width: 300px;
     grid-template-columns: 1fr;
     padding-top: 40px;
     padding-bottom: 40px;
     gap: 0;
+  }
+
+  .servicos{
+    max-width: 300px;
+    grid-template-columns: 1fr;
+  }
+
+  .item-servicos{
+    grid-column: span 1;
   }
 
   .descricao {
@@ -827,7 +914,15 @@ h3 {
 }
 
 @media (max-width: 320px) {
+  .bg-intro {
+    box-shadow: none;
+  }
+  
   .introducao {
+    max-width: 250px;
+  }
+
+  .servicos{
     max-width: 250px;
   }
 
