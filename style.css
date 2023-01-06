@@ -20,6 +20,7 @@ a {
   text-decoration: none;
   color: #0a2540;
   position: relative;
+  font-weight: 700;
 }
 
 .menu-items a:hover {
@@ -111,6 +112,7 @@ h1 {
   line-height: 1;
   position: relative;
   font-weight: 300;
+  z-index: 0;
 }
 
 h1::before {
@@ -136,13 +138,55 @@ h1::before {
   font-weight: bold;
 }
 
-.projetos {
+.servicos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 0;
   background-color: white;
+  gap: 20px;
+}
+
+.item-servicos{
+  grid-column: span 3;
+}
+
+.servico-tipo{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 5px;
+  gap: 20px;
+  color: #0a2540;
+}
+
+.servico-tipo:hover{
+  background-color: #0a2540;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+.servico-tipo img{
+  width: 15%;
+}
+
+.servico-tipo h3{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.servico-tipo p{
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
   gap: 20px;
 }
 
@@ -210,8 +254,11 @@ h2::before {
   background-color: white;
 }
 
+.bg-gray{
+  background-color: #d8d8d89c;
+}
+
 h3 {
-  color: #0a2540;
   font-size: 1.5rem;
   margin: 0;
 }
@@ -222,12 +269,12 @@ h3 {
 }
 
 .projeto {
-  padding: 20px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
   height: 250px;
   border-radius: 5px;
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 
 .projeto-1 {
@@ -274,6 +321,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
+  gap: 10px;
 }
 
 .tags span {
@@ -283,7 +331,6 @@ h3 {
   color: white;
   display: block;
   border-radius: 20px;
-  margin: 5px;
 }
 
 .bg-azul {
