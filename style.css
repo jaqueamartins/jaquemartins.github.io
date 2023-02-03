@@ -65,6 +65,122 @@ li {
   font-weight: 500;
 }
 
+.item{
+  width: 100%;
+}
+
+.swiper {
+  width: 890px;
+  height: 530px;
+  margin-left: 0;
+  margin-right: 90px;
+}
+
+.slide-1{
+  background-image: url("./img/nutrier-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-2{
+  background-image: url("./img/chilla.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-3{
+  background-image: url("./img/dolceart-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-4{
+  background-image: url("./img/axis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-5{
+  background-image: url("./img/mamm-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-6{
+  background-image: url("./img/solaris-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-7{
+  background-image: url("./img/tapecaria.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-8{
+  background-image: url("./img/nutrier-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-9{
+  background-image: url("./img/plantae-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-10{
+  background-image: url("./img/dolceart-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-11{
+  background-image: url("./img/mamm-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-12{
+  background-image: url("./img/solaris-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-13{
+  background-image: url("./img/nutrier-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-14{
+  background-image: url("./img/alison.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-15{
+  background-image: url("./img/nutrier-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .logo {
   width: 150px;
   user-select: none;
@@ -90,12 +206,9 @@ li {
 
 .introducao {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 0;
 }
 
 .profile-pic {
@@ -116,6 +229,7 @@ h1 {
   position: relative;
   font-weight: 300;
   z-index: 0;
+  width: 15ch;
 }
 
 h1::before {
@@ -134,6 +248,7 @@ h1::before {
 .descricao {
   color: #f2f2f2;
   font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .destaque {
@@ -194,16 +309,13 @@ h1::before {
 }
 
 .lista-projetos{
-  grid-column: span 2 / auto;
-  display: flex;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  padding: 0px 0px 20px 20px;
-  margin: 0px auto;
   max-width: 1200px;
-  overflow-x: auto;
-  scroll-padding: 16px;
-  margin-left: -20px;
   cursor:grabbing;
+  justify-content: space-between
 }
 
 .lista-projetos::-webkit-scrollbar {
@@ -225,9 +337,10 @@ h1::before {
   justify-self: end;
 }
 
-.item3 {
-  margin-top: 10px;
+.projeto-tituloPrincipal{
+  color: white;
 }
+
 
 h2 {
   margin: 0;
@@ -270,8 +383,8 @@ h2::before {
 .botao-secundario{
   text-transform: uppercase;
   font-weight: bolder;
-  color: #7a73ff;
-  background-color: transparent;
+  color: white;
+  background-color: #7a73ff;
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 5px;
@@ -285,15 +398,8 @@ h2::before {
 }
 
 .botao:hover {
-  background-color: white;
+  background-color: transparent;
   color: #7a73ff;
-  border: 2px solid #7a73ff;
-  transition-duration: 0.5s;
-}
-
-.botao-secundario:hover {
-  background-color: #7a73ff;
-  color: white;
   border: 2px solid #7a73ff;
   transition-duration: 0.5s;
 }
@@ -321,11 +427,12 @@ h3 {
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 200px;
+  height: 260px;
   border-radius: 5px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  box-shadow: 0 0 20px 1px rgb(0 0 0 / 10%);
+  width: 100%;
   align-content: space-between;
+  box-sizing: border-box;
 }
 
 .projeto h3{
@@ -333,8 +440,23 @@ h3 {
   color: white;
 }
 
+.projeto-titulo{
+  opacity: 0;
+}
+
+.projeto:hover .botao-secundario{
+  opacity: 100;
+  transition-duration: 0.5s;
+}
+
+.projeto:hover .projeto-titulo{
+  opacity: 100;
+  transition-duration: 0.5s;
+}
+
 .projeto-1 {
-  background: url(./img/bikcraft.jpg) no-repeat;
+  background-image: url(./img/bikcraft.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -345,13 +467,9 @@ h3 {
   transform-origin: 50% 50%;
 }
 
-.projeto:hover .botao-secundario{
-  opacity: 100;
-  transition-duration: 0.5s;
-}
-
 .projeto-2 {
-  background: url(./img/care-cat.jpg) no-repeat;
+  background-image: url(./img/care-cat.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -362,12 +480,9 @@ h3 {
   transform-origin: 50% 50%;
 }
 
-.projeto-2 > h3 {
-  color: #7a73ff;
-}
-
 .projeto-3 {
-  background: url(./img/plantae.jpg) no-repeat;
+  background-image: url(./img/plantae-1.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -376,24 +491,12 @@ h3 {
 .projeto-3:hover {
   transform: scale(1.05);
   transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/plantae-1.jpg');
 }
 
 .projeto-4{
-  background: url(./img/mamm.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: 0.3s;
-}
-
-.projeto-5{
-  background: url(./img/nutrier.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: 0.3s;
-}
-
-.projeto-6{
-  background: url(./img/livar.jpg) no-repeat;
+  background-image: url(./img/mamm-1.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: 0.3s;
@@ -402,24 +505,64 @@ h3 {
 .projeto-4:hover{
   transform: scale(1.05);
   transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/mamm-1.jpg');
+}
+
+.projeto-5{
+  background-image: url(./img/nutrier-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
 }
 
 .projeto-5:hover{
   transform: scale(1.05);
   transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/nutrier-1.png');
+}
+
+
+.projeto-6{
+  background-image: url(./img/tapecaria.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
 }
 
 .projeto-6:hover{
   transform: scale(1.05);
   transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/tapecaria.png');
 }
 
-.projeto-5 h3{
-  color: #7a73ff;
+.projeto-7{
+  background-image: url(./img/solaris-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
 }
 
-.projeto-6 h3{
-  color: #7a73ff;
+.projeto-7:hover{
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/solaris-1.jpg');
+}
+
+.projeto-8{
+  background-image: url(./img/chilla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.projeto-8:hover{
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/chilla.png');
 }
 
 .tags {
@@ -581,6 +724,20 @@ h3 {
   font-weight: bold;
 }
 
+.bg-roxo{
+  background-color: #7a73ff;
+}
+
+.links-rodape a{
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  .swiper {
+    width: 730px
+  }
+}
+
 
 @media (max-width: 1300px) {
   .bg-intro {
@@ -588,13 +745,12 @@ h3 {
     box-sizing: border-box;
   }
 
-  header {
-    max-width: 900px;
+  .swiper {
+    width: 630px
   }
 
-  .introducao {
+  header {
     max-width: 900px;
-    gap: 50px;
   }
 
   .servicos{
@@ -630,6 +786,17 @@ h3 {
   }
 }
 
+@media (max-width: 1200px) {
+  .swiper {
+    width: 500px;
+    margin-right: 70px;
+  }
+
+  h1{
+    width: fit-content;
+  }
+}
+
 @media (max-width: 1024px) {
   .bg-intro {
     box-shadow: inset 250px 0px #7a73ff;
@@ -637,11 +804,6 @@ h3 {
 
   header {
     max-width: 750px;
-  }
-
-  .introducao {
-    max-width: 750px;
-    gap: 50px;
   }
 
   .servicos{
@@ -660,16 +822,22 @@ h3 {
     max-width: 750px;
   }
 
+  .projeto{
+    padding: 10px;
+  }
+
   .skills {
     max-width: 750px;
   }
 
   .complementares {
     max-width: 750px;
+    
   }
 
   .complementares h3 {
     font-size: 1.8rem;
+    width: fit-content;
   }
 
   .skills-item {
@@ -701,6 +869,13 @@ h3 {
     left: -37px;
     top: -25px;
   }
+}
+
+@media (max-width: 900px) {
+  .swiper {
+    width: 400px
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -741,9 +916,8 @@ h3 {
     font-size: 1.6rem;
   }
 
-  .introducao {
-    max-width: 650px;
-    gap: 30px;
+  .swiper {
+    margin-right: 50px;
   }
 
   .servicos{
@@ -776,10 +950,12 @@ h3 {
 
   .lista-projetos{
     max-width: 650px;
+    padding: 0px 0px 20px 0px;
+    margin-left: 0;
+    grid-template-columns: 1fr 1fr;
   }
 
   .projeto{
-    width: 230px;
     height: 250px;
     padding: 20px;
   }
@@ -790,24 +966,27 @@ h3 {
     font-size: .7rem;
   }
 
-  .lista-projetos::-webkit-scrollbar {
-    height: 15px;
-  }
-
   ul {
     margin-top: 25px;
     margin-bottom: 0;
   }
 }
 
+@media (max-width: 770px) {
+  .swiper {
+    width: 330px;
+  }
+}
+
 @media (max-width: 690px) {
-  .bg-intro {
-    box-shadow: inset 150px 0px #7a73ff;
-    box-sizing: border-box;
+  .swiper {
+    width: 100%;
+    height: 300px;
   }
 
-  .introducao {
-    max-width: 500px;
+  .bg-intro {
+    box-shadow: none;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -818,6 +997,10 @@ h3 {
     background-size: 40px 100px;
     margin-left: 25px;
     top: -30px;
+  }
+
+  .introducao{
+    grid-template-columns: 1fr;
   }
 
   .servicos{
@@ -841,8 +1024,6 @@ h3 {
   }
 
   .projeto{
-    width: 230px;
-    height: 250px;
     padding: 20px;
   }
 
@@ -882,28 +1063,34 @@ h3 {
   .complementar-titulo h4 {
     width: auto;
   }
+
+  .item {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero-title{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+  }
 }
 
 @media (max-width: 570px) {
-  .bg-intro {
-    box-shadow: inset 100px 0px #7a73ff;
-    box-sizing: border-box;
-}
-  
-  .introducao {
-    max-width: 450px;
+  .hero-title{
+    max-width: 400px;
   }
 
   .servicos{
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .projetos {
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .skills {
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .skills-item {
@@ -911,11 +1098,11 @@ h3 {
   }
 
   .formacao {
-    max-width: 450px;
+    max-width: 400px;
   }
 
   .complementares {
-    max-width: 450px;
+    max-width: 400px;
     grid-template-columns: 1fr;
   }
 
@@ -926,6 +1113,7 @@ h3 {
 
   .lista-projetos{
     max-width: 450px;
+    grid-template-columns: 1fr;
   }
 
   .rodape {
@@ -944,12 +1132,8 @@ h3 {
     gap: 30px;
   }
 
-  .introducao {
+  .hero-title{
     max-width: 300px;
-    grid-template-columns: 1fr;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    gap: 0;
   }
 
   .servicos{
@@ -959,7 +1143,6 @@ h3 {
 
   .lista-projetos{
     max-width: 340px;
-    margin-left: -20px;
   }
 
   .item-servicos{
@@ -1069,7 +1252,7 @@ h3 {
     box-shadow: none;
   }
   
-  .introducao {
+  .hero-title{
     max-width: 250px;
   }
 
@@ -1091,7 +1274,6 @@ h3 {
 
   .lista-projetos{
     max-width: 290px;
-    margin-left: -20px;
   }
 
   .complementares {

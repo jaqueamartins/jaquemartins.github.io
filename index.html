@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" />
     <title>Jaque Martins | Ilustração, Design Gráfico e Web Design</title>
     <meta
@@ -34,22 +35,42 @@
       </header>
     </div>
 
-    <div class="bg-azul bg-intro">
+    <div class="bg-azul">
       <main class="introducao">
         <div class="item">
-          <img
-            class="profile-pic"
-            src="./img/profile_pic.png"
-            alt="Foto da Jaque com um dinossauro de fundo"
-          />
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide-1"></div>
+              <div class="swiper-slide slide-2" ></div>
+              <div class="swiper-slide slide-3"></div>
+              <div class="swiper-slide slide-4"></div>
+              <div class="swiper-slide slide-5"></div>
+              <div class="swiper-slide slide-6"></div>
+              <div class="swiper-slide slide-7"></div>
+              <div class="swiper-slide slide-8"></div>
+              <div class="swiper-slide slide-9"></div>
+              <div class="swiper-slide slide-10"></div>
+              <div class="swiper-slide slide-11"></div>
+              <div class="swiper-slide slide-12"></div>
+              <div class="swiper-slide slide-13"></div>
+              <div class="swiper-slide slide-14"></div>
+              <div class="swiper-slide slide-15"></div>
+            </div>
+          </div>
         </div>
         <div class="item">
-          <h1>Ilustração, <br>Design Gráfico<br> e  Web Design</h1>
-          <p class="descricao">
-            Nerd apaixonada por <span class="destaque">design</span> e
-            <span class="destaque">tecnologia</span>. <br />
-            Procuro sempre mesclar essas duas paixões em meus projetos.
-          </p>
+          <div class="hero-title">
+            <h1>Ilustração, Design Gráfico e  Web Design</h1>
+            <p class="descricao">
+              Nerd apaixonada por <span class="destaque">design</span> e
+              <span class="destaque">tecnologia</span>. <br />
+              Procuro sempre mesclar essas duas paixões em meus projetos.
+            </p>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5511979621601&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+os+servi%C3%A7os&type=phone_number&app_absent=0" class="botao" target="_blank">vamos fazer o seu projeto?</a>
+          </div>
         </div>
       </main>
     </div>
@@ -111,12 +132,12 @@
           <h2>Projetos</h2>
         </div>
         <div class="item2">
-          <a href="" class="botao">ver todos</a>
+          <a href="./projetos.html" class="botao">ver todos</a>
         </div>
         <div class="lista-projetos">
           <div class="item3">
             <div class="projeto projeto-4">
-              <h3>MAMM Consultoria</h3>
+              <h3 class="projeto-titulo">MAMM Consultoria</h3>
               <div class="tags">
                 <span>Identidade Visual</span>
               </div>
@@ -125,7 +146,7 @@
           </div>
           <div class="item3">
               <div class="projeto projeto-5">
-                <h3>Nutrier</h3>
+                <h3 class="projeto-titulo">Nutrier</h3>
                 <div class="tags">
                   <span>Identidade Visual</span>
                 </div>
@@ -134,7 +155,7 @@
           </div>
           <div class="item3">
             <div class="projeto projeto-1">
-              <h3>Bikcraft</h3>
+              <h3 class="projeto-titulo">Bikcraft</h3>
               <div class="tags">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -145,7 +166,7 @@
         </div>
         <div class="item3">
           <div class="projeto projeto-6">
-            <h3>Livar Tapeçaria</h3>
+            <h3 class="projeto-titulo">Livar Tapeçaria</h3>
             <div class="tags">
               <span>Identidade Visual</span>
             </div>
@@ -153,9 +174,8 @@
           </div>
       </div>
           <div class="item3">
-            
               <div class="projeto projeto-2">
-                <h3>Care Cat</h3>
+                <h3 class="projeto-titulo">Care Cat</h3>
                 <div class="tags">
                   <span>HTML</span>
                   <span>CSS</span>
@@ -168,7 +188,7 @@
           </div>
           <div class="item3">
               <div class="projeto projeto-3">
-                <h3>Plantaê</h3>
+                <h3 class="projeto-titulo">Plantaê</h3>
                 <div class="tags">
                   <span>UX</span>
                   <span>UI</span>
@@ -368,6 +388,26 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        effect: 'slide',
+        loop: true,
+
+        autoplay: {
+          delay: 2000,
+        },
+
+        grid: {
+          fill: 'column',
+        },
+
+
+      });
+    </script>
   </body>
 </html>
