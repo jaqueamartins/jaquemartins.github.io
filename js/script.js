@@ -23,3 +23,14 @@ slider.addEventListener('mousemove', (e) => {
   console.log(walk);
 });
 
+const contentful = require('contentful')
+
+const client = contentful.createClient({
+  space: 'fw5eg9fz84f5',
+  environment: 'master', // defaults to 'master' if not set
+  accessToken: 'rg7_s6I8IWWMgSofh4eQ7MW08XX_WoFiwB1vZF3BoCI'
+})
+
+client.getEntries()
+.then((response) => console.log(response.items))
+.catch(console.error)
